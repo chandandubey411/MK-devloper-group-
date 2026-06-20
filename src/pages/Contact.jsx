@@ -92,68 +92,9 @@ const Contact = () => {
       {/* 2. Contact Split Area */}
       <section className="relative py-24 bg-dark">
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            
-            {/* Left Column: Inquiry details & branches cards */}
-            <div className="flex flex-col gap-10 text-left">
-              
-              <div>
-                <span className="text-xs font-bold text-accent uppercase tracking-widest bg-primary/10 border border-primary/20 px-3 py-1 rounded-full mb-4 inline-block">
-                  Regional Offices
-                </span>
-                <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-white mb-4 uppercase">
-                  Our Corporate Spaces
-                </h2>
-                <p className="text-white/50 text-xs md:text-sm font-sans font-light leading-relaxed">
-                  Visit our designated executive lounges for portfolio reviews and direct model structural walkthroughs.
-                </p>
-              </div>
 
-              {/* Branch Locations Cards */}
-              <div className="flex flex-col gap-6">
-                {offices.map((office, idx) => (
-                  <SlideUp
-                    key={idx}
-                    className="glass-dark border border-white/5 rounded-2xl overflow-hidden flex flex-col md:flex-row gap-4 hover:border-primary/20 transition-all duration-400"
-                  >
-                    {office.image && (
-                      <div className="md:w-1/3 aspect-[4/3] md:aspect-auto overflow-hidden shrink-0">
-                        <img src={office.image} alt={office.city} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-                      </div>
-                    )}
-                    <div className="flex-grow p-6 flex flex-col justify-between text-left">
-                      <div>
-                        <h3 className="text-white font-bold text-base tracking-tight uppercase border-b border-white/5 pb-2 mb-3">
-                          {office.city}
-                        </h3>
-                        <ul className="flex flex-col gap-2.5 font-sans text-xs text-white/70">
-                          <li className="flex gap-2">
-                            <FaMapMarkerAlt className="text-primary mt-0.5 shrink-0" />
-                            <span>{office.address}</span>
-                          </li>
-                          <li className="flex gap-2 items-center">
-                            <FaPhoneAlt className="text-primary shrink-0" />
-                            <a href={`tel:${office.phone.replace(/\s+/g, '')}`} className="hover:text-primary transition-colors">{office.phone}</a>
-                          </li>
-                          <li className="flex gap-2 items-center">
-                            <FaEnvelope className="text-primary shrink-0" />
-                            <a href={`mailto:${office.email}`} className="hover:text-primary transition-colors">{office.email}</a>
-                          </li>
-                          <li className="flex gap-2 items-center">
-                            <FaClock className="text-primary shrink-0" />
-                            <span>{office.hours}</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </SlideUp>
-                ))}
-              </div>
-
-            </div>
-
-            {/* Right Column: Dynamic Form Submission Panel */}
+          {/* Form — full width centered */}
+          <div className="max-w-3xl mx-auto">
             <SlideUp className="glass-dark border border-primary/20 p-8 rounded-2xl shadow-glow text-left">
               <span className="text-[10px] font-bold text-accent uppercase tracking-widest bg-primary/10 border border-primary/20 px-3 py-1 rounded-full mb-4 inline-block">
                 Secure advisory channel
@@ -249,9 +190,62 @@ const Contact = () => {
 
                 </form>
               )}
-
             </SlideUp>
+          </div>
 
+          {/* Regional Offices — 3+3 grid below form */}
+          <div className="mt-20">
+            <div className="text-center mb-10">
+              <span className="text-xs font-bold text-accent uppercase tracking-widest bg-primary/10 border border-primary/20 px-3 py-1 rounded-full mb-4 inline-block">
+                Regional Offices
+              </span>
+              <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-white mt-4 mb-3 uppercase">
+                Our Corporate Spaces
+              </h2>
+              <p className="text-white/50 text-xs md:text-sm font-sans font-light leading-relaxed max-w-xl mx-auto">
+                Visit our designated executive lounges for portfolio reviews and direct model structural walkthroughs.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {offices.map((office, idx) => (
+                <SlideUp
+                  key={idx}
+                  className="glass-dark border border-white/5 rounded-2xl overflow-hidden flex flex-col hover:border-primary/20 transition-all duration-400"
+                >
+                  {office.image && (
+                    <div className="w-full h-44 overflow-hidden shrink-0">
+                      <img src={office.image} alt={office.city} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+                    </div>
+                  )}
+                  <div className="flex-grow p-5 flex flex-col justify-between text-left">
+                    <div>
+                      <h3 className="text-white font-bold text-sm tracking-tight uppercase border-b border-white/5 pb-2 mb-3">
+                        {office.city}
+                      </h3>
+                      <ul className="flex flex-col gap-2.5 font-sans text-xs text-white/70">
+                        <li className="flex gap-2">
+                          <FaMapMarkerAlt className="text-primary mt-0.5 shrink-0" />
+                          <span>{office.address}</span>
+                        </li>
+                        <li className="flex gap-2 items-center">
+                          <FaPhoneAlt className="text-primary shrink-0" />
+                          <a href={`tel:${office.phone.replace(/\s+/g, '')}`} className="hover:text-primary transition-colors">{office.phone}</a>
+                        </li>
+                        <li className="flex gap-2 items-center">
+                          <FaEnvelope className="text-primary shrink-0" />
+                          <a href={`mailto:${office.email}`} className="hover:text-primary transition-colors">{office.email}</a>
+                        </li>
+                        <li className="flex gap-2 items-center">
+                          <FaClock className="text-primary shrink-0" />
+                          <span>{office.hours}</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </SlideUp>
+              ))}
+            </div>
           </div>
 
           {/* 3. High End Custom Google Map iframe representation */}

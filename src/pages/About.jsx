@@ -163,7 +163,7 @@ const About = () => {
                   </span>
                   {/* Year badge */}
                   <div className="flex items-center gap-3 mb-5">
-                    <div className="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_#D97706] shrink-0" />
+                    <div className="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_#B59455] shrink-0" />
                     <span className="text-sm font-extrabold text-primary tracking-widest font-heading">{item.year}</span>
                     <div className="flex-1 h-px bg-gradient-to-r from-primary/40 to-transparent" />
                   </div>
@@ -176,7 +176,7 @@ const About = () => {
                   {/* Bottom connector dot */}
                   <div className="absolute -bottom-[22px] left-1/2 -translate-x-1/2 flex flex-col items-center z-10">
                     <div className="w-px h-5 bg-primary/40" />
-                    <div className="w-4 h-4 rounded-full border-2 border-primary bg-dark shadow-[0_0_10px_#D97706]" />
+                    <div className="w-4 h-4 rounded-full border-2 border-primary bg-dark shadow-[0_0_10px_#B59455]" />
                     <div className="w-px h-5 bg-primary/40" />
                   </div>
                 </SlideUp>
@@ -221,7 +221,7 @@ const About = () => {
             {timeline.map((item, idx) => (
               <SlideUp key={idx} delay={idx * 0.08} className="flex gap-6 pb-10 relative">
                 <div className="shrink-0 flex flex-col items-center z-10">
-                  <div className="w-10 h-10 rounded-full bg-dark-card border-2 border-primary flex items-center justify-center shadow-[0_0_14px_#D97706]">
+                  <div className="w-10 h-10 rounded-full bg-dark-card border-2 border-primary flex items-center justify-center shadow-[0_0_14px_#B59455]">
                     <div className="w-2.5 h-2.5 rounded-full bg-primary" />
                   </div>
                 </div>
