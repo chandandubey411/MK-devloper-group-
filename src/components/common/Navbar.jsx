@@ -60,30 +60,30 @@ const Navbar = () => {
       </div>
 
       <nav
-        className={`fixed top-0 lg:top-[38px] left-0 w-full z-[1000] py-4 transition-all duration-500 font-heading ${
+        className={`fixed top-0 lg:top-[38px] left-0 w-full z-[1000] py-3 lg:py-4 transition-all duration-500 font-heading ${
           isScrolled
-            ? "bg-dark/95 border-b border-primary/20 backdrop-blur-md shadow-glow py-3"
-            : "bg-transparent border-b border-white/5"
+            ? "bg-dark/95 border-b border-primary/20 backdrop-blur-md shadow-glow"
+            : "bg-dark/90 backdrop-blur-sm border-b border-white/5 lg:bg-transparent lg:backdrop-blur-none"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2 md:gap-3">
             {/* Logo Image */}
             <div className="flex items-center justify-center">
               <img
                 src="/logo.png"
                 alt="MK Developer Group"
-                className="h-12 w-auto md:h-14 object-contain"
+                className="h-9 w-auto md:h-12 lg:h-14 object-contain"
               />
             </div>
 
             {/* Text */}
             <div className="flex flex-col leading-tight">
-              <span className="text-lg md:text-xl font-extrabold tracking-wider text-white uppercase">
+              <span className="text-sm md:text-lg lg:text-xl font-extrabold tracking-wider text-white uppercase">
                 MK Developer
               </span>
-              <span className="text-xs md:text-sm font-medium tracking-[0.25em] text-primary uppercase">
+              <span className="text-[10px] md:text-xs lg:text-sm font-medium tracking-[0.2em] text-primary uppercase">
                 Group
               </span>
             </div>
