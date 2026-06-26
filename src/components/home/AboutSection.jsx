@@ -24,7 +24,7 @@ const AboutSection = () => {
               MK Developer & Group has established itself as one of the premier luxury corporate developers in India. For over a decade, we have created architectural masterpieces that elegantly balance futuristic design, zero-emission sustainability, and structural integrity.
             </p>
             <p className="text-white/60 text-sm font-sans font-light leading-relaxed mb-8">
-              We collaborate with globally recognized award-winning design consultants and engineering agencies to deliver premium residential penthouses, Class-A corporate blocks, and extensive smart townscapes across major hubs like Delhi, Gurgaon, Mumbai, and Bangalore.
+              We collaborate with globally recognized award-winning design consultants and engineering agencies to deliver premium residential penthouses, Class-A corporate blocks, and extensive smart townscapes across major hubs like Noida, Vaishali, Ghaziabad, and Sahibabad.
             </p>
 
             {/* Core Values */}

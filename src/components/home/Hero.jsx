@@ -128,13 +128,15 @@ const Hero = () => {
                 className="w-full px-4 py-3 rounded-lg bg-dark/60 text-white border border-white/10 text-xs focus:border-primary font-sans transition-all duration-300"
               >
                 <option value="">Select City</option>
-                <option value="Delhi">Delhi</option>
+                <option value="Indraprastha Yojna Pocket D">Indraprastha Yojna Pocket D</option>
+                <option value="Rajender Nagar Sahibabad">Rajender Nagar Sahibabad</option>
+                <option value="Shalimar garden Ghaziabad">Shalimar garden Ghaziabad</option>
+                <option value="Vaishali">Vaishali</option>
+                <option value="Indirapuram">Indirapuram</option>
+                <option value="Vasundhara">Vasundhara</option>
                 <option value="Noida">Noida</option>
-                <option value="Gurgaon">Gurgaon</option>
-                <option value="Mumbai">Mumbai</option>
-                <option value="Bangalore">Bangalore</option>
-                <option value="Hyderabad">Hyderabad</option>
-                <option value="Lucknow">Lucknow</option>
+                <option value="Dwarika City Lal Kuan">Dwarika City Lal Kuan</option>
+                <option value="DLF Ankur Vihar Ghaziabad">DLF Ankur Vihar Ghaziabad</option>
               </select>
             </div>
 

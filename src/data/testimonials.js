@@ -5,7 +5,7 @@ export const testimonials = [
     role: "CEO, Singhania Enterprises",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    comment: "MK Developer & Group represents the zenith of premium real estate development in India. The craftsmanship in our Worli Seafront residence is outstanding. The attention to detail in Italian marble layups and home automation exceeded our highest expectations."
+    comment: "MK Developer & Group represents the zenith of premium real estate development in India. The craftsmanship in our Rajender Nagar Sahibabad residence is outstanding. The attention to detail in Italian marble layups and home automation exceeded our highest expectations."
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const testimonials = [
     role: "Director, LifeCare Hospital Group",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    comment: "Acquiring a penthouse at Greenfield Villas in Lucknow was a seamless, premium experience. The transparent communication, commitment to execution timelines, and gorgeous biophilic landscapes make it a serene sanctuary for my family."
+    comment: "Acquiring a penthouse at Greenfield Villas in Vasundhara was a seamless, premium experience. The transparent communication, commitment to execution timelines, and gorgeous biophilic landscapes make it a serene sanctuary for my family."
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const testimonials = [
     role: "Investors & Entrepreneurs",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    comment: "The Silicon Valley Suites in Bangalore are a marvel of green tech integration. As early tech investors, we appreciate the solar smart grids, premium EV docking, and gorgeous high-end clubhouse spaces. Truly exceptional!"
+    comment: "The Silicon Valley Suites in Dwarika City Lal Kuan are a marvel of green tech integration. As early tech investors, we appreciate the solar smart grids, premium EV docking, and gorgeous high-end clubhouse spaces. Truly exceptional!"
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const testimonials = [
     role: "Founder, Goel Logistics Corporation",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    comment: "Working with MK Developer & Group for our Kanpur Business Park commercial space was a masterclass in professional corporate development. Their structural expertise, speed of execution, and pristine finish are unmatched in North India."
+    comment: "Working with MK Developer & Group for our Shalimar garden Ghaziabad business space was a masterclass in professional corporate development. Their structural expertise, speed of execution, and pristine finish are unmatched in the NCR region."
   }
 ];
 export const partners = [
@@ -42,10 +42,10 @@ export const partners = [
 export const timeline = [
   { year: "2012", title: "Inception & First Foundation", description: "MK Developer & Group founded with a vision to develop modern residential spaces in Delhi NCR." },
   { year: "2015", title: "Entry Into Commercial Projects", description: "Launched our first major commercial business tower, offering premium workspace systems." },
-  { year: "2018", title: "Pan-India Expansion", description: "Expanded footprint into Maharashtra, Karnataka, and Telangana, constructing landmark projects." },
+  { year: "2018", title: "Delhi NCR Expansion", description: "Expanded footprint across Delhi NCR, constructing landmark projects." },
   { year: "2021", title: "Going Net-Zero & Smart Tech", description: "Committed to sustainable building practices, earning multiple IGBC green certifications." },
-  { year: "2024", title: "Completing Iconic Seafronts", description: "Delivered top ultra-luxury residential towers with 360-degree views in Worli, Mumbai." },
-  { year: "2026", title: "Leading India's Smart Future", description: "Building massive high-end smart townships and futuristic infrastructure, redefining India's skyline." }
+  { year: "2024", title: "Completing Iconic Towers", description: "Delivered top ultra-luxury residential towers with 360-degree views in Rajender Nagar Sahibabad." },
+  { year: "2026", title: "Leading India's Smart Future", description: "Building massive high-end smart townships and futuristic infrastructure, redefining the NCR skyline." }
 ];
 export const team = [
   {
