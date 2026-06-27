@@ -192,28 +192,87 @@ const Footer = () => {
                 <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
                 <span>
                   1, ph 1/9, indraprastha yojna, Near SBVM School, Ghaziabad,
-                  Uttar Pradesh 201102
+                  Uttar Pradesh 201102 (HO)
                 </span>
               </li>
-              <li className="flex gap-3 items-center">
-                <FaPhoneAlt className="text-primary shrink-0" />
-                <a
-                  href="tel:+918010029100"
-                  className="hover:text-primary transition-colors"
-                >
-                  +91 80100 29100
-                </a>
+              <li className="flex gap-3 items-start">
+                <FaPhoneAlt className="text-primary shrink-0 mt-1" />
+                <div className="flex flex-col gap-1">
+                  <a
+                    href="tel:+918010029100"
+                    className="hover:text-primary transition-colors font-sans"
+                  >
+                    +91 80100 29100
+                  </a>
+                  <a
+                    href="tel:+919311701212"
+                    className="hover:text-primary transition-colors font-sans"
+                  >
+                    +91 93117 01212
+                  </a>
+                </div>
               </li>
               <li className="flex gap-3 items-center">
                 <FaEnvelope className="text-primary shrink-0" />
                 <a
-                  href="mailto:mkdevelopergroup@gmail.com"
-                  className="hover:text-primary transition-colors"
+                  href="mailto:mkdevelopers2002@gmail.com"
+                  className="hover:text-primary transition-colors font-sans"
                 >
-                  mkdevelopergroup@gmail.com
+                  mkdevelopers2002@gmail.com
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Regional Offices Section */}
+        <div className="border-t border-white/10 pt-10 mt-10 mb-10">
+          <h4 className="text-white font-semibold text-sm tracking-wider uppercase mb-6 font-heading">
+            Our Regional Office Addresses
+          </h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-xs text-white/60 font-sans font-light">
+            <div className="flex gap-3 p-4 rounded-xl bg-white/5 border border-white/5">
+              <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
+              <div>
+                <span className="font-semibold text-white block mb-1">Indraprastha Yojna (HO)</span>
+                <span>1, ph 1/9, indraprastha yojna, Near SBVM School, Ghaziabad, Uttar Pradesh 201102</span>
+              </div>
+            </div>
+            <div className="flex gap-3 p-4 rounded-xl bg-white/5 border border-white/5">
+              <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
+              <div>
+                <span className="font-semibold text-white block mb-1">Rajender Nagar</span>
+                <span>Shop no -2, Near Major Mohit Sharma Metro station, sector -5, Rajender Nagar Sahibabad, Ghaziabad, Uttar Pradesh 201005</span>
+              </div>
+            </div>
+            <div className="flex gap-3 p-4 rounded-xl bg-white/5 border border-white/5">
+              <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
+              <div>
+                <span className="font-semibold text-white block mb-1">Ankur Vihar</span>
+                <span>E-36 SLF Ved Vihar, Ankur Vihar, Uttar Pradesh 201102</span>
+              </div>
+            </div>
+            <div className="flex gap-3 p-4 rounded-xl bg-white/5 border border-white/5">
+              <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
+              <div>
+                <span className="font-semibold text-white block mb-1">Chhapraola</span>
+                <span>Khasra no. 1220G, Dwarika City Shop - no.1, Plot no -295, Chhapraola, Ghaziabad, Uttar Pradesh 201009</span>
+              </div>
+            </div>
+            <div className="flex gap-3 p-4 rounded-xl bg-white/5 border border-white/5">
+              <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
+              <div>
+                <span className="font-semibold text-white block mb-1">Vaishali</span>
+                <span>Plot no -9, Near by Shopprix Mall Vaishali sector -5, Ghaziabad, Uttar Pradesh 201010</span>
+              </div>
+            </div>
+            <div className="flex gap-3 p-4 rounded-xl bg-white/5 border border-white/5">
+              <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
+              <div>
+                <span className="font-semibold text-white block mb-1">Salarpur</span>
+                <span>Plot -A1 A2 A3 Suman Enclave vill Salarpur, Noida, Uttar Pradesh 201301</span>
+              </div>
+            </div>
           </div>
         </div>
 

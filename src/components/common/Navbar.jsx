@@ -40,11 +40,11 @@ const Navbar = () => {
       <div className="hidden lg:flex w-full bg-dark border-b border-white/5 py-2.5 px-8 justify-between text-xs text-white/60 z-[1001] relative font-heading">
         <div className="flex items-center gap-6">
           <a
-            href="mailto:mkdevelopergroup@gmail.com"
+            href="mailto:mkdevelopers2002@gmail.com"
             className="flex items-center gap-2 hover:text-primary transition-colors"
           >
             <FaEnvelope className="text-primary text-[11px]" />{" "}
-            mkdevelopergroup@gmail.com
+            mkdevelopers2002@gmail.com
           </a>
           <span className="w-[1px] h-3 bg-white/10" />
           <a
@@ -207,11 +207,11 @@ const Navbar = () => {
                 29100
               </a>
               <a
-                href="mailto:mkdevelopergroup@gmail.com"
+                href="mailto:mkdevelopers2002@gmail.com"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
                 <FaEnvelope className="text-primary text-[10px]" />{" "}
-                mkdevelopergroup@gmail.com
+                mkdevelopers2002@gmail.com
               </a>
             </div>
           </div>

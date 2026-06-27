@@ -30,7 +30,7 @@ const Contact = () => {
       city: "Indraprastha Yojna — Ghaziabad",
       address: "1, ph 1/9, indraprastha yojna, Near SBVM School, Ghaziabad, uttar pradesh 201102",
       phone: "+91 80100 29100",
-      email: "mkdevelopergroup@gmail.com",
+      email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
     },
@@ -38,7 +38,7 @@ const Contact = () => {
       city: "Rajender Nagar — Sahibabad",
       address: "Shop no -2, Near Major Mohit Sharma Metro station, Rajender Nagar, sector -5, Rajender Nagar Sahibabad, Ghaziabad Uttar Pradesh 201005",
       phone: "+91 93117 01212",
-      email: "mkdevelopergroup@gmail.com",
+      email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80"
     },
@@ -46,7 +46,7 @@ const Contact = () => {
       city: "Ankur Vihar — Ghaziabad",
       address: "E-36 SLF Ved Vihar, Ankur Vihar 201102",
       phone: "+91 80100 29100",
-      email: "mkdevelopergroup@gmail.com",
+      email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80"
     },
@@ -54,7 +54,7 @@ const Contact = () => {
       city: "Chhapraola — Ghaziabad",
       address: "Khasra no. 1220G, Dwarika City Shop - no.1, Plot no -295, Chhapraola, Ghaziabad, Uttar Pradesh 201009",
       phone: "+91 80100 29100",
-      email: "mkdevelopergroup@gmail.com",
+      email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80"
     },
@@ -62,7 +62,7 @@ const Contact = () => {
       city: "Vaishali — Ghaziabad",
       address: "Plot no -9, Near by Shopprix Mall Vaishali sector -5 , Ghaziabad Uttar Pradesh 201010",
       phone: "+91 93117 01212",
-      email: "mkdevelopergroup@gmail.com",
+      email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80"
     },
@@ -70,7 +70,7 @@ const Contact = () => {
       city: "Salarpur — Noida",
       address: "Plot -A1 A2 A3 Suman Enclave vill Salarpur 201301 Noida Uttar Pradesh 201301",
       phone: "+91 80100 29100",
-      email: "mkdevelopergroup@gmail.com",
+      email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
       image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80"
     }

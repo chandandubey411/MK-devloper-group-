@@ -249,7 +249,7 @@ const PropertyDetails = ({ property }) => {
           {/* Quick contact direct dials */}
           <div className="mt-6 pt-6 border-t border-white/5 flex flex-col gap-2.5 text-[10px] text-white/50 font-sans text-left">
             <span className="flex items-center gap-2"><FaPhoneAlt className="text-primary" /> +91 80100 29100</span>
-            <span className="flex items-center gap-2"><FaEnvelope className="text-primary" /> mkdevelopergroup@gmail.com</span>
+            <span className="flex items-center gap-2"><FaEnvelope className="text-primary" /> mkdevelopers2002@gmail.com</span>
           </div>
 
         </SlideUp>

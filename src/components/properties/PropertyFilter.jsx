@@ -82,10 +82,11 @@ const PropertyFilter = ({
             className="w-full px-5 py-3 rounded-lg bg-dark/60 text-white border border-white/10 text-sm focus:border-primary font-sans transition-all duration-300"
           >
             <option value="">Any Bedrooms</option>
-            <option value="2">2 Bedrooms</option>
-            <option value="3">3 Bedrooms</option>
-            <option value="4">4 Bedrooms</option>
-            <option value="5">5+ Bedrooms</option>
+            <option value="1">1 BHK</option>
+            <option value="2">2 BHK</option>
+            <option value="3">3 BHK</option>
+            <option value="4">4 BHK</option>
+            <option value="5">5+ BHK</option>
             <option value="commercial">Commercial (No Beds)</option>
           </select>
         </div>
@@ -100,23 +101,30 @@ const PropertyFilter = ({
           <div className="flex justify-between items-center text-xs font-bold text-accent uppercase tracking-wider mb-1">
             <span className="flex items-center gap-1"><FaRupeeSign className="text-[9px]" /> Max Investment Budget</span>
             <span className="text-white font-sans tracking-wide">
-              {priceRange === 150000000 ? 'Any Budget' : `Under ₹${(priceRange / 10000000).toFixed(2)} Cr`}
+              {priceRange === 100000000
+                ? 'Any Budget'
+                : priceRange <= 2500000
+                ? 'Below 25 Lakhs'
+                : priceRange < 10000000
+                ? `Under ₹${priceRange / 100000} Lakhs`
+                : `Under ₹${(priceRange / 10000000).toFixed(2)} Cr`}
             </span>
           </div>
           <input
             type="range"
-            min="5000000"
-            max="150000000"
-            step="5000000"
+            min="1000000"
+            max="100000000"
+            step="500000"
             value={priceRange}
             onChange={(e) => setPriceRange(Number(e.target.value))}
             className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-primary"
           />
           <div className="flex justify-between text-[10px] text-white/40 mt-1 font-sans">
-            <span>₹50 Lakhs</span>
+            <span>₹10 Lakhs</span>
+            <span>₹25 Lakhs</span>
+            <span>₹2.5 Crore</span>
             <span>₹5 Crore</span>
-            <span>₹10 Crore</span>
-            <span>₹15 Crore+</span>
+            <span>₹10 Crore+</span>
           </div>
         </div>
 

@@ -151,11 +151,11 @@ const Hero = () => {
                 className="w-full px-4 py-3 rounded-lg bg-dark/60 text-white border border-white/10 text-xs focus:border-primary font-sans transition-all duration-300"
               >
                 <option value="">Select Category</option>
-                <option value="Apartment">Apartment</option>
-                <option value="Luxury Apartment">Luxury Apartment</option>
-                <option value="Villa">Villa</option>
-                <option value="Penthouse">Penthouse</option>
-                <option value="Commercial">Commercial Space</option>
+                <option value="Flats">Flats</option>
+                <option value="Independent floor">Independent floor</option>
+                <option value="Apartments">Apartments</option>
+                <option value="Commercial Space">Commercial Space</option>
+                <option value="Villas">Villas</option>
               </select>
             </div>
 

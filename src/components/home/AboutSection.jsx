@@ -21,10 +21,10 @@ const AboutSection = () => {
             <div className="w-20 h-1 bg-gold-gradient rounded-full mb-6" />
             
             <p className="text-white/70 text-sm md:text-base font-sans font-light leading-relaxed mb-6">
-              MK Developer & Group has established itself as one of the premier luxury corporate developers in India. For over a decade, we have created architectural masterpieces that elegantly balance futuristic design, zero-emission sustainability, and structural integrity.
+              MK Developers & Group is a trusted real estate company serving homebuyers since 2002. With over 5,000 successfully delivered homes, we specialize in premium fully furnished flats in GDA-approved societies, offering up to 90% finance facility and zero brokerage charges.
             </p>
             <p className="text-white/60 text-sm font-sans font-light leading-relaxed mb-8">
-              We collaborate with globally recognized award-winning design consultants and engineering agencies to deliver premium residential penthouses, Class-A corporate blocks, and extensive smart townscapes across major hubs like Noida, Vaishali, Ghaziabad, and Sahibabad.
+              Our projects are strategically located in Indraprastha Yojna, Rajender Nagar, DLF Ankur Vihar, Vaishali, Indirapuram, Noida, and Dwarika City (Lal Kuan), ensuring quality living, transparency, and customer satisfaction at every step.
             </p>
 
             {/* Core Values */}
@@ -33,14 +33,14 @@ const AboutSection = () => {
                 <FaCheckCircle className="text-primary mt-1 shrink-0 text-sm" />
                 <div>
                   <h4 className="text-white font-semibold text-sm">Transparency First</h4>
-                  <p className="text-xs text-white/50 mt-0.5">Absolute clarity in corporate deals and execution timelines.</p>
+                  <p className="text-xs text-white/50 mt-0.5">Absolute clarity in property deals, legal verification, and timelines.</p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <FaCheckCircle className="text-primary mt-1 shrink-0 text-sm" />
                 <div>
-                  <h4 className="text-white font-semibold text-sm">IGBC Sustainability</h4>
-                  <p className="text-xs text-white/50 mt-0.5">Focus on zero-waste, energy-saving smart designs.</p>
+                  <h4 className="text-white font-semibold text-sm">90% Finance Facility</h4>
+                  <p className="text-xs text-white/50 mt-0.5">Secure easy home loans from major leading financial institutions.</p>
                 </div>
               </div>
             </div>

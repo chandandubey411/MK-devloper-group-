@@ -14,7 +14,7 @@ const Properties = () => {
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedType, setSelectedType] = useState('');
   const [selectedBeds, setSelectedBeds] = useState('');
-  const [priceRange, setPriceRange] = useState(150000000); // 15 Cr max
+  const [priceRange, setPriceRange] = useState(100000000); // 10 Cr max
   const [filteredProperties, setFilteredProperties] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -58,7 +58,7 @@ const Properties = () => {
       }
 
       // Filter by Budget
-      if (priceRange < 150000000) {
+      if (priceRange < 100000000) {
         results = results.filter((p) => p.price <= priceRange);
       }
 
@@ -86,7 +86,7 @@ const Properties = () => {
     setSelectedCity('');
     setSelectedType('');
     setSelectedBeds('');
-    setPriceRange(150000000);
+    setPriceRange(100000000);
   };
 
   return (

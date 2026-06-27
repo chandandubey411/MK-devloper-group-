@@ -10,10 +10,10 @@ import PageHero from '../components/common/PageHero';
 
 const About = () => {
   const stats = [
-    { value: "25+", label: "Years of Excellence" },
-    { value: "10,000+", label: "Happy Families" },
-    { value: "50+", label: "Projects Delivered" },
-    { value: "12", label: "Cities Across India" },
+    { value: "Since 2002", label: "Serving Homebuyers" },
+    { value: "5,000+", label: "Delivered Homes" },
+    { value: "Up to 90%", label: "Finance Facility" },
+    { value: "Zero", label: "Brokerage Charges" },
   ];
 
   const values = [
@@ -72,13 +72,13 @@ const About = () => {
                 Building Trust Since Day One
               </h2>
               <p className="text-white/70 text-sm font-sans font-light leading-relaxed">
-                MK Developer & Group was founded with a single vision — to make premium real estate accessible, transparent, and rewarding for every Indian family. Starting from humble beginnings in Ghaziabad, we have grown into one of North India's most recognized real estate consultancies.
+                MK Developers & Group is a trusted real estate company serving homebuyers since 2002. We specialize in premium fully furnished flats in GDA-approved societies, offering up to 90% finance facility and zero brokerage charges to make home acquisition transparent and hassle-free.
               </p>
               <p className="text-white/70 text-sm font-sans font-light leading-relaxed">
-                From luxury high-rise apartments to Grade-A commercial complexes, we have guided over 10,000 families to their dream properties. Our deep market expertise, honest advisory, and unwavering commitment to quality have built us a legacy that speaks for itself.
+                With over 5,000 successfully delivered homes, our projects are strategically located in Indraprastha Yojna, Rajender Nagar, DLF Ankur Vihar, Vaishali, Indirapuram, Noida, and Dwarika City (Lal Kuan), ensuring high quality living, structural reliability, and customer satisfaction at every step.
               </p>
               <div className="grid grid-cols-2 gap-4 mt-2 font-sans">
-                {["RERA Registered", "25+ Years Experience", "Pan India Presence", "Zero Hidden Charges"].map((pt, i) => (
+                {["GDA Approved", "Serving Since 2002", "90% Finance Facility", "Zero Brokerage Charges"].map((pt, i) => (
                   <div key={i} className="flex items-center gap-2.5 text-xs text-white/70">
                     <FaCheckCircle className="text-primary shrink-0" /> {pt}
                   </div>
