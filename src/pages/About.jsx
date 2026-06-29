@@ -263,54 +263,48 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <SectionTitle subtitle="Visionary Leadership" title="The Minds Behind MK Developer & Group" align="center" />
 
-          {/* Founder's Spotlight */}
+          {/* Founder Spotlight */}
           {team.length > 0 && (
-            <SlideUp className="glass-dark border border-white/10 rounded-3xl p-8 md:p-12 lg:p-16 mb-20 max-w-5xl mx-auto hover:border-primary/30 transition-all duration-500 relative group overflow-hidden">
+            <SlideUp className="glass-dark border border-white/10 rounded-3xl mb-20 max-w-5xl mx-auto hover:border-primary/30 transition-all duration-500 relative group overflow-hidden p-0 grid grid-cols-1 lg:grid-cols-2">
               {/* Background Glow */}
               <div className="absolute -right-24 -bottom-24 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-primary/15 transition-colors duration-500" />
 
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center relative z-10">
-                {/* Founder Image */}
-                <div className="lg:col-span-5 flex justify-center">
-                  <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-gold group-hover:border-primary transition-colors duration-500">
-                    <img
-                      src={team[0].image}
-                      alt={team[0].name}
-                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
-                  </div>
-                </div>
+              {/* Founder Image - 50% left area with no padding */}
+              <div className="relative w-full h-full min-h-[320px] lg:min-h-full overflow-hidden">
+                <img
+                  src={team[0].image}
+                  alt={team[0].name}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
+              </div>
 
-                {/* Founder Details */}
-                <div className="lg:col-span-7 text-left flex flex-col justify-center">
-                  <span className="text-xs font-bold text-accent uppercase tracking-[0.25em] bg-primary/10 border border-primary/20 px-3.5 py-1.5 rounded-full w-fit mb-6">
-                    Founder's Vision
-                  </span>
-                  <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight uppercase mb-2">
-                    {team[0].name}
-                  </h3>
-                  <h4 className="text-sm font-semibold text-primary uppercase tracking-widest font-heading mb-6">
-                    {team[0].role}
-                  </h4>
-                  <div className="text-white/80 text-sm font-sans font-light leading-relaxed space-y-4 mb-6 italic border-l-2 border-primary/40 pl-6">
-                    <p>
-                      "Building homes is not just about concrete and steel; it's about cementing trust and crafting spaces where families build their futures. At MK Developer & Group, we are committed to transparency, unmatched quality, and delivering on our promises."
-                    </p>
-                    <p className="not-italic text-white/65 text-xs font-sans mt-2">
-                      {team[0].bio}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-4 mt-2">
-                    <div className="h-px w-10 bg-primary/40" />
-                    <span className="text-xs font-semibold text-white/40 uppercase tracking-widest font-sans">MK Developer & Group</span>
-                  </div>
+              {/* Founder Details - 50% right area with padding */}
+              <div className="p-8 md:p-12 lg:p-16 text-left flex flex-col justify-center relative z-10">
+                <span className="text-xs font-bold text-accent uppercase tracking-[0.25em] bg-primary/10 border border-primary/20 px-3.5 py-1.5 rounded-full w-fit mb-6">
+                  Founder's Vision
+                </span>
+                <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight uppercase mb-2">
+                  {team[0].name}
+                </h3>
+                <h4 className="text-sm font-semibold text-primary uppercase tracking-widest font-heading mb-6">
+                  {team[0].role}
+                </h4>
+                <div className="text-white/80 text-sm font-sans font-light leading-relaxed space-y-4 mb-6 italic border-l-2 border-primary/40 pl-6">
+                  <p>
+                    "Building homes is not just about concrete and steel; it's about cementing trust and crafting spaces where families build their futures. At MK Developer & Group, we are committed to transparency, unmatched quality, and delivering on our promises."
+                  </p>
+                  <p className="not-italic text-white/65 text-xs font-sans mt-2">
+                    {team[0].bio}
+                  </p>
+                </div>
+                <div className="flex items-center gap-4 mt-2">
+                  <div className="h-px w-10 bg-primary/40" />
+                  <span className="text-xs font-semibold text-white/40 uppercase tracking-widest font-sans">MK Developer & Group</span>
                 </div>
               </div>
             </SlideUp>
           )}
-
-
         </div>
       </section>
 
