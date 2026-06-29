@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaCheckCircle, FaPaperPlane } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaCheckCircle, FaPaperPlane, FaDirections } from 'react-icons/fa';
 import Button from '../components/common/Button';
 import SlideUp from '../components/animations/SlideUp';
 import PageHero from '../components/common/PageHero';
@@ -32,7 +32,8 @@ const Contact = () => {
       phone: "+91 80100 29100",
       email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Mk+developer+%26+Group+-+Real+Estate+Consultant+%7C+Property+Dealer+in+Indraprastha+Yojna+Ghaziabad"
     },
     {
       city: "Rajender Nagar — Sahibabad",
@@ -40,7 +41,8 @@ const Contact = () => {
       phone: "+91 93117 01212",
       email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Shop+no+-2+Near+Major+Mohit+Sharma+Metro+station+Rajender+Nagar+sector+-5+Sahibabad+Ghaziabad"
     },
     {
       city: "Ankur Vihar — Ghaziabad",
@@ -48,7 +50,8 @@ const Contact = () => {
       phone: "+91 80100 29100",
       email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=E-36+SLF+Ved+Vihar+Ankur+Vihar+Ghaziabad"
     },
     {
       city: "Dwarika City — Lal Kuan",
@@ -56,7 +59,8 @@ const Contact = () => {
       phone: "+91 80100 29100",
       email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Khasra+no.+1220G+Dwarika+City+Shop+no.+1+Plot+no.+295+Lal+Kuan+Ghaziabad"
     },
     {
       city: "Vaishali — Ghaziabad",
@@ -64,7 +68,8 @@ const Contact = () => {
       phone: "+91 93117 01212",
       email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Plot+no+-9+Near+by+Shopprix+Mall+Vaishali+sector+-5+Ghaziabad"
     },
     {
       city: "Salarpur — Noida",
@@ -72,7 +77,8 @@ const Contact = () => {
       phone: "+91 80100 29100",
       email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
-      image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Plot+-A1+A2+A3+Suman+Enclave+vill+Salarpur+Noida+Uttar+Pradesh"
     }
   ];
 
@@ -211,7 +217,7 @@ const Contact = () => {
               {offices.map((office, idx) => (
                 <SlideUp
                   key={idx}
-                  className="glass-dark border border-white/5 rounded-2xl overflow-hidden flex flex-col hover:border-primary/20 transition-all duration-400"
+                  className="glass-dark border border-white/5 rounded-2xl overflow-hidden flex flex-col hover:border-primary/20 transition-all duration-400 h-full"
                 >
                   {office.image && (
                     <div className="w-full h-44 overflow-hidden shrink-0">
@@ -223,7 +229,7 @@ const Contact = () => {
                       <h3 className="text-white font-bold text-sm tracking-tight uppercase border-b border-white/5 pb-2 mb-3">
                         {office.city}
                       </h3>
-                      <ul className="flex flex-col gap-2.5 font-sans text-xs text-white/70">
+                      <ul className="flex flex-col gap-2.5 font-sans text-xs text-white/70 mb-5">
                         <li className="flex gap-2">
                           <FaMapMarkerAlt className="text-primary mt-0.5 shrink-0" />
                           <span>{office.address}</span>
@@ -242,6 +248,18 @@ const Contact = () => {
                         </li>
                       </ul>
                     </div>
+                    {office.mapUrl && (
+                      <a 
+                        href={office.mapUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-full mt-4"
+                      >
+                        <Button variant="outline" className="w-full py-2.5 text-[10px] uppercase tracking-wider font-heading flex items-center justify-center gap-2 border-white/10 hover:border-primary">
+                          Get Directions <FaDirections className="text-xs text-primary animate-pulse" />
+                        </Button>
+                      </a>
+                    )}
                   </div>
                 </SlideUp>
               ))}
