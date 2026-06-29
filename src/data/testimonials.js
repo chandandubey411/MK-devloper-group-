@@ -49,8 +49,14 @@ export const timeline = [
 ];
 export const team = [
   {
+    name: "Himanshu Bhardwaj",
+    role: "Founder & Managing Director",
+    image: "/himanshu-bhardwaj.jpg",
+    bio: "Visionary entrepreneur and founder of MK Developer & Group. Directing the company's expansion, strategic partnerships, and commitment to delivering high-quality GDA-approved residential spaces."
+  },
+  {
     name: "Shekar Muttreja",
-    role: "Chairman & Managing Director",
+    role: "Chairman",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
     bio: "Over 25 years of experience in structural real estate investments and corporate consulting across India. Visionary behind premium smart enclaves."
   },

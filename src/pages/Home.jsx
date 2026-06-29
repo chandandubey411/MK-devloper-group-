@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="relative w-full bg-dark overflow-hidden">
       {/* Dynamic SEO Meta title/headings handled cleanly */}
-      <h1 className="sr-only">Hindustan Buildwell - Premium Real Estate Developer in India</h1>
+      <h1 className="sr-only">MK Developer & Group - Premium Real Estate Developer in India</h1>
       
       {/* Page layout components */}
       <Hero />

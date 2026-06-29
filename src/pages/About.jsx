@@ -136,6 +136,25 @@ const About = () => {
         </div>
       </section>
 
+      {/* 5.5 Corporate Video Section */}
+      <section className="relative py-24 bg-dark/95 border-t border-white/5 overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-primary/5 rounded-full blur-[130px] pointer-events-none" />
+        <div className="max-w-5xl mx-auto px-4 md:px-8 relative z-10">
+          <SectionTitle subtitle="A Message in Motion" title="Corporate Video Presentation" align="center" />
+          <SlideUp className="mt-14">
+            <div className="relative w-full aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-gold bg-black">
+              <video 
+                src="/intro.mp4" 
+                controls
+                playsInline
+                className="w-full h-full object-contain"
+                preload="metadata"
+              />
+            </div>
+          </SlideUp>
+        </div>
+      </section>
+
       {/* 6. Timeline — Unique Horizontal Grid Style */}
       <section className="relative py-24 bg-dark border-y border-white/5 overflow-hidden">
         {/* Decorative glows */}
@@ -239,22 +258,59 @@ const About = () => {
         </div>
       </section>
 
-      {/* 7. Leadership Grid */}
-      <section className="relative py-24 bg-dark">
+      {/* 7. Leadership Section */}
+      <section className="relative py-24 bg-dark border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <SectionTitle subtitle="Executive Board" title="The Leadership behind MK Developer & Group" align="center" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
-            {team.map((member, idx) => (
-              <ZoomIn key={idx} delay={idx * 0.08} className="glass-dark border border-white/5 rounded-2xl overflow-hidden flex flex-col items-center text-center p-6 hover:border-primary/20 transition-all duration-400 group">
-                <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-primary/20 mb-6 shrink-0 group-hover:border-primary transition-colors">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+          <SectionTitle subtitle="Visionary Leadership" title="The Minds Behind MK Developer & Group" align="center" />
+
+          {/* Founder's Spotlight */}
+          {team.length > 0 && (
+            <SlideUp className="glass-dark border border-white/10 rounded-3xl p-8 md:p-12 lg:p-16 mb-20 max-w-5xl mx-auto hover:border-primary/30 transition-all duration-500 relative group overflow-hidden">
+              {/* Background Glow */}
+              <div className="absolute -right-24 -bottom-24 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-primary/15 transition-colors duration-500" />
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center relative z-10">
+                {/* Founder Image */}
+                <div className="lg:col-span-5 flex justify-center">
+                  <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-gold group-hover:border-primary transition-colors duration-500">
+                    <img
+                      src={team[0].image}
+                      alt={team[0].name}
+                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
+                  </div>
                 </div>
-                <h4 className="text-white font-bold text-base tracking-tight uppercase mb-1">{member.name}</h4>
-                <span className="text-xs font-semibold text-accent uppercase tracking-widest font-heading mb-4 block">{member.role}</span>
-                <p className="text-white/50 text-xs font-sans font-light leading-relaxed">{member.bio}</p>
-              </ZoomIn>
-            ))}
-          </div>
+
+                {/* Founder Details */}
+                <div className="lg:col-span-7 text-left flex flex-col justify-center">
+                  <span className="text-xs font-bold text-accent uppercase tracking-[0.25em] bg-primary/10 border border-primary/20 px-3.5 py-1.5 rounded-full w-fit mb-6">
+                    Founder's Vision
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight uppercase mb-2">
+                    {team[0].name}
+                  </h3>
+                  <h4 className="text-sm font-semibold text-primary uppercase tracking-widest font-heading mb-6">
+                    {team[0].role}
+                  </h4>
+                  <div className="text-white/80 text-sm font-sans font-light leading-relaxed space-y-4 mb-6 italic border-l-2 border-primary/40 pl-6">
+                    <p>
+                      "Building homes is not just about concrete and steel; it's about cementing trust and crafting spaces where families build their futures. At MK Developer & Group, we are committed to transparency, unmatched quality, and delivering on our promises."
+                    </p>
+                    <p className="not-italic text-white/65 text-xs font-sans mt-2">
+                      {team[0].bio}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4 mt-2">
+                    <div className="h-px w-10 bg-primary/40" />
+                    <span className="text-xs font-semibold text-white/40 uppercase tracking-widest font-sans">MK Developer & Group</span>
+                  </div>
+                </div>
+              </div>
+            </SlideUp>
+          )}
+
+
         </div>
       </section>
 
