@@ -252,13 +252,13 @@ const Contact = () => {
           <div className="mt-20 rounded-2xl overflow-hidden border border-white/10 relative h-[450px] shadow-glow">
             <iframe
               title="MK Developer & Group Office - Indraprastha Yojna, Ghaziabad"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56019.2!2d77.41!3d28.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb4e000001%3A0x1000000000000000!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111957.17139197278!2d77.18050003051758!3d28.729657337755253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf9aaeef49fad%3A0x5d04052f5579da50!2sMk%20developer%20%26%20Group%20-%20Real%20Estate%20Consultant%20%7C%20Property%20Dealer%20in%20Indraprastha%20Yojna%20Ghaziabad!5e0!3m2!1sen!2sin!4v1782706677103!5m2!1sen!2sin"
               width="100%"
               height="100%"
-              style={{ border: 0, filter: "grayscale(1) invert(0.9) contrast(1.2)" }}
+              style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
             />
           </div>
 
