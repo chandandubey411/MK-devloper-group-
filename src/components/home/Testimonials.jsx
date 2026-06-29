@@ -64,12 +64,6 @@ const Testimonials = () => {
 
                   {/* Customer details */}
                   <div className="flex items-center gap-4 mt-auto border-t border-white/5 pt-6">
-                    <img
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      loading="lazy"
-                      className="w-12 h-12 rounded-full object-cover border-2 border-primary/20 shrink-0"
-                    />
                     <div>
                       <h4 className="text-white font-bold text-sm md:text-base tracking-tight leading-tight">
                         {testimonial.name}

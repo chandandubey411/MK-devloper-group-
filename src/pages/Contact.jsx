@@ -8,7 +8,7 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [subject, setSubject] = useState('');
+  const [propertyCategory, setPropertyCategory] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
@@ -18,7 +18,7 @@ const Contact = () => {
     setName('');
     setEmail('');
     setPhone('');
-    setSubject('');
+    setPropertyCategory('');
     setMessage('');
     setTimeout(() => {
       setSubmitted(false);
@@ -161,22 +161,24 @@ const Contact = () => {
                       />
                     </div>
                     <div className="flex flex-col gap-1.5">
-                      <label className="text-[10px] font-bold text-accent uppercase tracking-wider">Inquiry Subject</label>
+                      <label className="text-[10px] font-bold text-accent uppercase tracking-wider">Property Category</label>
                       <select
-                        value={subject}
-                        onChange={(e) => setSubject(e.target.value)}
+                        value={propertyCategory}
+                        onChange={(e) => setPropertyCategory(e.target.value)}
                         required
                         className="w-full px-4 py-3.5 rounded-lg bg-dark/60 text-white border border-white/10 text-xs focus:border-primary font-sans transition-all duration-300"
                       >
-                        <option value="">Select Reason</option>
-                        <option value="Residential Acquisition">Residential Acquisition</option>
-                        <option value="Commercial Lease/Purchase">Commercial Lease/Purchase</option>
-                        <option value="Smart Township Collaboration">Smart Township Collaboration</option>
-                        <option value="Career & Leadership Careers">Career & Leadership Careers</option>
-                        <option value="Other general inquiry">Other general inquiry</option>
+                        <option value="">Select Category</option>
+                        <option value="Flats">Flats</option>
+                        <option value="Independent floor">Independent floor</option>
+                        <option value="Apartments">Apartments</option>
+                        <option value="Commercial Space">Commercial Space</option>
+                        <option value="Villas">Villas</option>
                       </select>
                     </div>
                   </div>
+
+
 
                   <div className="flex flex-col gap-1.5">
                     <label className="text-[10px] font-bold text-accent uppercase tracking-wider">Brief Message Context</label>
