@@ -191,8 +191,7 @@ const Footer = () => {
               <li className="flex gap-3">
                 <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
                 <span>
-                  1, ph 1/9, indraprastha yojna, Near SBVM School, Ghaziabad,
-                  Uttar Pradesh 201102 (HO)
+                  Ph1/9, Indraprastha Yojna Pocket D, Near SBVM International School, Ghaziabad, UP 201102 (HO)
                 </span>
               </li>
               <li className="flex gap-3 items-start">
@@ -235,7 +234,7 @@ const Footer = () => {
               <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
               <div>
                 <span className="font-semibold text-white block mb-1">Indraprastha Yojna (HO)</span>
-                <span>1, ph 1/9, indraprastha yojna, Near SBVM School, Ghaziabad, Uttar Pradesh 201102</span>
+                <span>Ph1/9, Indraprastha Yojna Pocket D, Near SBVM International School, Ghaziabad, UP 201102</span>
               </div>
             </div>
             <div className="flex gap-3 p-4 rounded-xl bg-white/5 border border-white/5">
@@ -255,8 +254,8 @@ const Footer = () => {
             <div className="flex gap-3 p-4 rounded-xl bg-white/5 border border-white/5">
               <FaMapMarkerAlt className="text-primary mt-1 shrink-0" />
               <div>
-                <span className="font-semibold text-white block mb-1">Chhapraola</span>
-                <span>Khasra no. 1220G, Dwarika City Shop - no.1, Plot no -295, Chhapraola, Ghaziabad, Uttar Pradesh 201009</span>
+                <span className="font-semibold text-white block mb-1">Dwarika City (Lal Kuan)</span>
+                <span>Khasra no. 1220G, Dwarika City, Shop no. 1, Plot no. 295, Lal Kuan, Ghaziabad, Uttar Pradesh 201009</span>
               </div>
             </div>
             <div className="flex gap-3 p-4 rounded-xl bg-white/5 border border-white/5">

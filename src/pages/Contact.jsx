@@ -28,7 +28,7 @@ const Contact = () => {
   const offices = [
     {
       city: "Indraprastha Yojna — Ghaziabad",
-      address: "1, ph 1/9, indraprastha yojna, Near SBVM School, Ghaziabad, uttar pradesh 201102",
+      address: "Ph1/9, Indraprastha Yojna Pocket D, Near SBVM International School, Ghaziabad, UP 201102",
       phone: "+91 80100 29100",
       email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
@@ -51,8 +51,8 @@ const Contact = () => {
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80"
     },
     {
-      city: "Chhapraola — Ghaziabad",
-      address: "Khasra no. 1220G, Dwarika City Shop - no.1, Plot no -295, Chhapraola, Ghaziabad, Uttar Pradesh 201009",
+      city: "Dwarika City — Lal Kuan",
+      address: "Khasra no. 1220G, Dwarika City, Shop no. 1, Plot no. 295, Lal Kuan, Ghaziabad, Uttar Pradesh 201009",
       phone: "+91 80100 29100",
       email: "mkdevelopers2002@gmail.com",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM",
